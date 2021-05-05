@@ -1,0 +1,1 @@
+create table Enterprise(id int);

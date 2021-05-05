@@ -1,0 +1,9 @@
+# Fastapi
+fastapi==0.63.0
+uvicorn==0.13.4
+# ORM
+peewee==3.14.4
+# Fake (for testting db)
+Faker==8.1.2
+# Requests
+requests==2.25.1

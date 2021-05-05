@@ -1,0 +1,21 @@
+version: "3"
+services:
+  app:
+    build: ./project-enviame
+    container_name: app
+    ports:
+        - "5000:5000"
+    volumes:
+        - ./project-enviame:/app
+    restart: always
+    environment:
+      - APP_NAME=main.py
+
+  db:
+    image: mysql:5.7
+    ports:
+        - "32000:3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+    volumes:
+        - ./db:/docker-entrypoint-initdb.d/:ro

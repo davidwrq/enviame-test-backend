@@ -23,24 +23,26 @@ La estructura base del proyecto es la siguente:
 │   └──  init.sql
 ├── Exercises
 │   ├── exercise_3
-    │   ├── exercise_3.py
-    │   └── README.md
+│   │   ├── exercise_3.py
+│   │   └── README.md
 │   ├── exercise_4
-    │   ├── exercise_4.py
-    │   └── README.md
+│   │   ├── exercise_4.py
+│   │   └── README.md
 │   ├── exercise_5
-    │   ├── exercise_5.py
-    │   └── README.md
+│   │   ├── exercise_5.py
+│   │   └── README.md
 │   ├── exercise_6
-    │   └── exercise_6.py
-    │   └── README.md
+│   │   └── exercise_6.py
+│   │   └── README.md
 │   └── exercise_7
-    │   ├── exercise_7.py
-    │   └── README.md
+│   │   ├── exercise_7.py
+│   │   └── README.md
 ├── docker-compose.yml
 ├── README.md
 └── .gitignore
 ```
+dentro de cada carpeta  de exercise hay un readme para cada caso.
+
 
 # Ejercicio 1: Docker  + Ejercicio 2: API REST + CRUD
 
@@ -78,13 +80,6 @@ http://0.0.0.0:5000
 ```
 
 TODO: Script con data fake
-## Ejecutando las pruebas ⚙️
-
-Los tests corren en el mismo contenedor 
-
-```
-docker-compose run app test
-```
 
 Documentación
 

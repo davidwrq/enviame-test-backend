@@ -12,6 +12,8 @@ La estructura base del proyecto es la siguente:
 ├── project-enviame (Main API REST empresas)
 ├── app
 │   ├── __init__.py
+│   ├── scripts
+│   │   └── fake_init_db.py
 │   ├── crud.py
 │   ├── database.py
 │   ├── Dockerfile
@@ -82,15 +84,8 @@ http://0.0.0.0:5000
 
 ## Agregar registros fake a la DB
 ```
-
 docker-compose run app python ./app/scripts/fake_init_db.py
 ```
-
-
-##  Run tests
-```
-```
-
 
 ##  Documentación
 

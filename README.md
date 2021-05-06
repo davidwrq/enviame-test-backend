@@ -73,15 +73,26 @@ docker-compose >= (version 1.26.0)
 docker-compose build
 docker-compose up
 ```
+
 ## Correr servidor
 El servidor quedara corriendo en el puerto 5000
 ```
 http://0.0.0.0:5000
 ```
 
-TODO: Script con data fake
+## Agregar registros fake a la DB
+```
 
-Documentación
+docker-compose run app python ./app/scripts/fake_init_db.py
+```
+
+
+##  Run tests
+```
+```
+
+
+##  Documentación
 
 
 Para la documentación se implemento mediante Fastapi con swagger. 
@@ -90,5 +101,14 @@ ir a la siguente url:
 
 
 ```
-http://0.0.0.0:5000/docs
+http://localhost:5000/docs
+```
+
+
+
+
+Documentacion alternativa (provided by ReDoc):
+
+```
+http://127.0.0.1:8000/redoc
 ```

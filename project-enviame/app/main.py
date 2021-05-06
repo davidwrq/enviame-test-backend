@@ -37,7 +37,7 @@ def get_db(db_state=Depends(reset_db_state)):
 @app.post(
     "/enterprises/", response_model=schemas.Enterprise, dependencies=[Depends(get_db)]
 )
-def create_user(enterprise: schemas.EnterpriseCreate):
+def create_enterprise(enterprise: schemas.EnterpriseCreate):
     db_enterprise = crud.get_enterprise_by_name(name=enterprise.name)
     if db_enterprise:
         raise HTTPException(status_code=400, detail="enterprise already created")
@@ -51,8 +51,8 @@ def create_user(enterprise: schemas.EnterpriseCreate):
     dependencies=[Depends(get_db)],
 )
 def get_enterprises(skip: int = 0, limit: int = 100):
-    users = crud.get_enterprises(skip=skip, limit=limit)
-    return users
+    enterprises = crud.get_enterprises(skip=skip, limit=limit)
+    return enterprises
 
 
 # get BY ID

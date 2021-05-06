@@ -21,8 +21,6 @@ La estructura base del proyecto es la siguente:
 │   ├── models.py
 │   ├── requirements.txt
 │   └── schemas.py
-├── db
-│   └──  init.sql
 ├── Exercises
 │   ├── exercise_3
 │   │   ├── exercise_3.py
@@ -85,6 +83,11 @@ http://0.0.0.0:5000
 ## Agregar registros fake a la DB
 ```
 docker-compose run app python ./app/scripts/fake_init_db.py
+```
+
+## Limpiar registros db
+```
+docker-compose run app python ./app/scripts/clean_db.py
 ```
 
 ##  Documentación
